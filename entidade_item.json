@@ -27,5 +27,26 @@
     "categoriaItem" : "ESPORTES",
     "quantidade" : 2,
     "valor" : 75.8
+  }, {
+    "id" : 4,
+    "nome" : "Bola",
+    "descricaoItem" : "Bola de Basquete",
+    "categoriaItem" : "BRINQUEDOS",
+    "quantidade" : 1,
+    "valor" : 12.5
+  }, {
+    "id" : 5,
+    "nome" : "Pincel",
+    "descricaoItem" : "Pincel de Quadro - Azul e Vermelho",
+    "categoriaItem" : "OUTROS",
+    "quantidade" : 2,
+    "valor" : 7.5
+  }, {
+    "id" : 6,
+    "nome" : "Controle",
+    "descricaoItem" : "Controle de PS4",
+    "categoriaItem" : "JOGOS",
+    "quantidade" : 2,
+    "valor" : 25.0
   } ]
 }

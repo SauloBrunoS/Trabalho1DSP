@@ -1,10 +1,10 @@
 package br.estudo.model;
 
-import java.io.BufferedReader;
-import java.io.BufferedWriter;
-import java.io.FileReader;
-import java.io.FileWriter;
-import java.io.IOException;
+import java.io.*;
+import java.util.ArrayList;
+import java.util.List;
+
+import br.estudo.functions.ConverterCSVtoJSONeXML;
 
 public class Item {
     private int id;
@@ -13,7 +13,6 @@ public class Item {
     private Categoria categoriaItem;
     private int quantidade;
     private Number valor;
-    private static int nextId = 0;
 
     public Item() {
         this.id = generateUniqueId();
@@ -37,24 +36,19 @@ public class Item {
         this.valor = valor;
     }
 
-    static {
-        try (BufferedReader reader = new BufferedReader(new FileReader("next_id.txt"))) {
-            nextId = Integer.parseInt(reader.readLine());
-        } catch (IOException | NumberFormatException e) {
-            nextId = 0;
-        }
-    }
-
     private int generateUniqueId() {
-        int uniqueId = nextId;
-        nextId++;
-
-        try (BufferedWriter writer = new BufferedWriter(new FileWriter("next_id.txt"))) {
-            writer.write(Integer.toString(nextId));
-        } catch (IOException e) {
+        try {
+            List<Item> items = ConverterCSVtoJSONeXML.converterParaListaItens(ConverterCSVtoJSONeXML.lerCSVItem());
+            int nextId = 0;
+            if (!items.isEmpty()) {
+                nextId = items.get(items.size() - 1).getId() + 1;
+            }
+            System.out.println(nextId);
+            return nextId;
+        } catch (Exception e) {
             e.printStackTrace();
+            return 0;
         }
-        return uniqueId;
     }
 
     public Number total() {
@@ -95,6 +89,22 @@ public class Item {
         this.categoriaItem = categoriaItem;
     }
 
+    public int getQuantidade() {
+        return quantidade;
+    }
+
+    public void setQuantidade(int quantidade) {
+        this.quantidade = quantidade;
+    }
+
+    public Number getValor() {
+        return valor;
+    }
+
+    public void setValor(Number valor) {
+        this.valor = valor;
+    }
+
     public enum Categoria {
         ROUPAS("Roupas"),
         ELETRONICOS("Eletrônicos"),
@@ -116,21 +126,5 @@ public class Item {
         public String getDescricao() {
             return descricao;
         }
-    }
-
-    public int getQuantidade() {
-        return quantidade;
-    }
-
-    public void setQuantidade(int quantidade) {
-        this.quantidade = quantidade;
-    }
-
-    public Number getValor() {
-        return valor;
-    }
-
-    public void setValor(Number valor) {
-        this.valor = valor;
     }
 }

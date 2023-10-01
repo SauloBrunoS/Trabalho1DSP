@@ -32,5 +32,29 @@
       <quantidade>2</quantidade>
       <valor>75.8</valor>
     </itemLista>
+    <itemLista>
+      <id>4</id>
+      <nome>Bola</nome>
+      <descricaoItem>Bola de Basquete</descricaoItem>
+      <categoriaItem>BRINQUEDOS</categoriaItem>
+      <quantidade>1</quantidade>
+      <valor>12.5</valor>
+    </itemLista>
+    <itemLista>
+      <id>5</id>
+      <nome>Pincel</nome>
+      <descricaoItem>Pincel de Quadro - Azul e Vermelho</descricaoItem>
+      <categoriaItem>OUTROS</categoriaItem>
+      <quantidade>2</quantidade>
+      <valor>7.5</valor>
+    </itemLista>
+    <itemLista>
+      <id>6</id>
+      <nome>Controle</nome>
+      <descricaoItem>Controle de PS4</descricaoItem>
+      <categoriaItem>JOGOS</categoriaItem>
+      <quantidade>2</quantidade>
+      <valor>25.0</valor>
+    </itemLista>
   </listaCompras>
 </listasCompras>
