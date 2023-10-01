@@ -1,15 +1,15 @@
 package br.estudo;
 
-import java.util.ArrayList;
+
 import java.util.List;
 import java.util.Scanner;
 
 import br.estudo.functions.CalcularHashSHA256CSV;
 import br.estudo.functions.CompactarCSVParaZIP;
 import br.estudo.functions.ContarInstanciasCSV;
+import br.estudo.functions.ConverterCSVtoJSONeXML;
 import br.estudo.functions.InserirNoCSV;
-import br.estudo.model.Item;
-import br.estudo.model.ListaItens;
+
 
 public class Main {
     public static void main(String[] args) {
@@ -42,23 +42,40 @@ public class Main {
                         System.out.println(resultadoContarInstanciasItemCSV);
                         System.out.println("\n*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*\n");
                         break;
-                        // case 3:
-                      //  System.out.println("\n*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*\n");
-                    // converterCSVparaJSONeXML();
+
+                    case 3:
+                        List<String[]> data =  ConverterCSVtoJSONeXML.lerCSV("entidade_item.csv");
+                        if(data != null){
+                            
+                            System.out.println("\n*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*\n");
+                            String resultadoConverterJSON = ConverterCSVtoJSONeXML.converterJSON(data, "entidade_item.csv");
+                            System.out.println(resultadoConverterJSON);
+                            String resultadoConverterXML = ConverterCSVtoJSONeXML.converterXML(data, "entidade_item.csv");
+                            System.out.println(resultadoConverterXML);
+                            System.out.println("\n*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*\n");
+              
+                        }else System.out.println("Falha na leitura do arquivo CSV");
+
+
+
+                        break;
                         
-                    // break;
                     case 4:
+
                         String resultadoCompactarItemCSVParaZIP = CompactarCSVParaZIP.compactarItemCSVParaZIP();
                         System.out.println("\n*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*\n");
                         System.out.println(resultadoCompactarItemCSVParaZIP);
                         System.out.println("\n*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*\n");
                         break;
+
                     case 5:
+                    
                         String resultadoCalcularHashSHA256ItemCSV = CalcularHashSHA256CSV.calcularHashSHA256ItemCSV();
                         System.out.println("\n*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*\n");
                         System.out.println(resultadoCalcularHashSHA256ItemCSV);
                         System.out.println("\n*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*\n");
                         break;
+
                     case 0:
                         System.out.println("Saindo...");
                         scanner.close();

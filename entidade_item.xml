@@ -1,0 +1,73 @@
+<LinkedList>
+  <item>id</item>
+  <item>nome</item>
+  <item>descricao</item>
+  <item>categoria</item>
+  <item>quantidade</item>
+  <item>valor</item>
+  <item>0</item>
+  <item>Bola</item>
+  <item>Bola de Futebol</item>
+  <item>BRINQUEDOS</item>
+  <item>1</item>
+  <item>10.5</item>
+  <item>1</item>
+  <item>Mesa</item>
+  <item>Mesa para sala</item>
+  <item>MOVEIS</item>
+  <item>1</item>
+  <item>250.0"0</item>
+  <item>Mouse</item>
+  <item>Preto</item>
+  <item>ELETRONICOS</item>
+  <item>1</item>
+  <item>20.0</item>
+  <item>0</item>
+  <item>CD</item>
+  <item>Avioes do forro vol.3</item>
+  <item>OUTROS</item>
+  <item>1</item>
+  <item>10.0</item>
+  <item>0</item>
+  <item>CD</item>
+  <item>Avioes do forro vol.3</item>
+  <item>OUTROS</item>
+  <item>1</item>
+  <item>10.0</item>
+  <item>0</item>
+  <item>CD</item>
+  <item>Avioes do forro vol.3</item>
+  <item>OUTROS</item>
+  <item>1</item>
+  <item>10.0</item>
+  <item>0</item>
+  <item>Notbook</item>
+  <item>Azul</item>
+  <item>ELETRONICOS</item>
+  <item>1</item>
+  <item>1000.0</item>
+  <item>0</item>
+  <item>Cama</item>
+  <item>box</item>
+  <item>MOVEIS</item>
+  <item>1</item>
+  <item>6000.0</item>
+  <item>0</item>
+  <item>Notbook</item>
+  <item>azul</item>
+  <item>ELETRONICOS</item>
+  <item>1</item>
+  <item>2000.0</item>
+  <item>0</item>
+  <item>Notbook</item>
+  <item>azul</item>
+  <item>ELETRONICOS</item>
+  <item>1</item>
+  <item>2000.0</item>
+  <item>0</item>
+  <item>Camisa</item>
+  <item>Azul M</item>
+  <item>ROUPAS</item>
+  <item>1</item>
+  <item>50.0</item>
+</LinkedList>

@@ -1,12 +1,15 @@
 package br.estudo.model;
 
+import java.io.Serializable;
 import java.util.ArrayList;
 import java.util.List;
+import com.fasterxml.jackson.dataformat.xml.annotation.*;
 
-public class ListaItens {
+@JacksonXmlRootElement(localName = "lista_itens")
+public class ListaItens implements Serializable{
     private int id;
     private String nome;
-    List<Item> lista_itens = new ArrayList<Item>();
+    List<Item> lista_itens;
     private TipoLista tipoLista;
     private static int nextId = 0;
 
@@ -37,6 +40,7 @@ public class ListaItens {
     }
 
     public ListaItens() {
+        this.lista_itens = new ArrayList<>();
         this.id = generateUniqueId();
     }
 
@@ -66,7 +70,8 @@ public class ListaItens {
     public void setNome(String nome) {
         this.nome = nome;
     }
-
+    @JacksonXmlElementWrapper(localName = "itens")
+    @JacksonXmlProperty(localName = "item")
     public List<Item> getLista_itens() {
         return lista_itens;
     }

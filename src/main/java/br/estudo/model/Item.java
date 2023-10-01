@@ -1,6 +1,8 @@
 package br.estudo.model;
 
-public class Item {
+import java.io.Serializable;
+
+public class Item implements Serializable {
     private int id;
     private String nome;
     private String descricao_item;
