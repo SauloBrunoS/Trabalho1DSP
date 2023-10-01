@@ -2,6 +2,13 @@ package br.estudo.model;
 
 import java.io.Serializable;
 
+import java.io.BufferedReader;
+import java.io.BufferedWriter;
+import java.io.FileReader;
+import java.io.FileWriter;
+import java.io.IOException;
+
+
 public class Item implements Serializable {
     private int id;
     private String nome;
@@ -24,8 +31,24 @@ public class Item implements Serializable {
         this.valor = valor;
     }
 
+    static {
+        try (BufferedReader reader = new BufferedReader(new FileReader("next_id.txt"))) {
+            nextId = Integer.parseInt(reader.readLine());
+        } catch (IOException | NumberFormatException e) {
+            nextId = 0;
+        }
+    }
+
     private int generateUniqueId() {
-        return nextId++;
+        int uniqueId = nextId;
+        nextId++;
+
+        try (BufferedWriter writer = new BufferedWriter(new FileWriter("next_id.txt"))) {
+            writer.write(Integer.toString(nextId));
+        } catch (IOException e) {
+            e.printStackTrace();
+        }
+        return uniqueId;
     }
 
     public Number total() {
