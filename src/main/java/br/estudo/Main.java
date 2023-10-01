@@ -4,6 +4,7 @@ import java.util.ArrayList;
 import java.util.List;
 import java.util.Scanner;
 
+import br.estudo.functions.CompactarCSVParaZIP;
 import br.estudo.functions.ContarInstanciasCSV;
 import br.estudo.functions.InserirNoCSV;
 import br.estudo.model.Item;
@@ -27,19 +28,20 @@ public class Main {
 
                 switch (opcao) {
                     case 1:
-                        String resultadoInserirCSV = InserirNoCSV.inserirItem();
-                        System.out.println(resultadoInserirCSV);
+                        String resultadoInserirItemCSV = InserirNoCSV.inserirItem();
+                        System.out.println(resultadoInserirItemCSV);
                         break;
                     case 2:
-                        String resultadoContarInstanciasCSV = ContarInstanciasCSV.ContarItens();
-                        System.out.println(resultadoContarInstanciasCSV);
+                        String resultadoContarInstanciasItemCSV = ContarInstanciasCSV.ContarItens();
+                        System.out.println(resultadoContarInstanciasItemCSV);
                         break;
                     // case 3:
                     // converterCSVparaJSONeXML();
                     // break;
-                    // case 4:
-                    // compactarCSVemZIP();
-                    // break;
+                    case 4:
+                        String resultadoCompactarItemCSVParaZIP = CompactarCSVParaZIP.compactarItemCSVParaZIP();
+                        System.out.println(resultadoCompactarItemCSVParaZIP);
+                        break;
                     // case 5:
                     // mostrarHashSHA256doCSV();
                     // break;
