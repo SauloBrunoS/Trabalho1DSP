@@ -41,7 +41,6 @@ public class Item {
             if (!items.isEmpty()) {
                 nextId = items.get(items.size() - 1).getId() + 1;
             }
-            System.out.println(nextId);
             return nextId;
         } catch (Exception e) {
             e.printStackTrace();
