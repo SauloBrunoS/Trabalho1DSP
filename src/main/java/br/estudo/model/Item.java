@@ -1,19 +1,16 @@
 package br.estudo.model;
 
-import java.io.Serializable;
-
 import java.io.BufferedReader;
 import java.io.BufferedWriter;
 import java.io.FileReader;
 import java.io.FileWriter;
 import java.io.IOException;
 
-
-public class Item implements Serializable {
+public class Item {
     private int id;
     private String nome;
-    private String descricao_item;
-    private Categoria categoria_item;
+    private String descricaoItem;
+    private Categoria categoriaItem;
     private int quantidade;
     private Number valor;
     private static int nextId = 0;
@@ -22,11 +19,20 @@ public class Item implements Serializable {
         this.id = generateUniqueId();
     }
 
+    public Item(int id, String nome, String descricao_item, Categoria categoria_item, int quantidade, Number valor) {
+        this.id = id;
+        this.nome = nome;
+        this.descricaoItem = descricao_item;
+        this.categoriaItem = categoria_item;
+        this.quantidade = quantidade;
+        this.valor = valor;
+    }
+
     public Item(String nome, String descricao_item, Categoria categoria_item, int quantidade, Number valor) {
         this.id = generateUniqueId();
         this.nome = nome;
-        this.descricao_item = descricao_item;
-        this.categoria_item = categoria_item;
+        this.descricaoItem = descricao_item;
+        this.categoriaItem = categoria_item;
         this.quantidade = quantidade;
         this.valor = valor;
     }
@@ -57,8 +63,8 @@ public class Item implements Serializable {
 
     @Override
     public String toString() {
-        return "Item [id=" + id + ", nome=" + nome + ", descricao_item=" + descricao_item + ", categoria_item="
-                + categoria_item + ", quantidade=" + quantidade + ", valor=" + valor + "]";
+        return "Item [id=" + id + ", nome=" + nome + ", descricao_item=" + descricaoItem + ", categoria_item="
+                + categoriaItem + ", quantidade=" + quantidade + ", valor=" + valor + "]";
     }
 
     public int getId() {
@@ -73,20 +79,20 @@ public class Item implements Serializable {
         this.nome = nome;
     }
 
-    public String getDescricao_item() {
-        return descricao_item;
+    public String getDescricaoItem() {
+        return descricaoItem;
     }
 
-    public void setDescricao_item(String descricao_item) {
-        this.descricao_item = descricao_item;
+    public void setDescricaoItem(String descricaoItem) {
+        this.descricaoItem = descricaoItem;
     }
 
-    public Categoria getCategoria_item() {
-        return categoria_item;
+    public Categoria getCategoriaItem() {
+        return this.categoriaItem;
     }
 
-    public void setCategoria_item(Categoria categoria_item) {
-        this.categoria_item = categoria_item;
+    public void setCategoriaItem(Categoria categoriaItem) {
+        this.categoriaItem = categoriaItem;
     }
 
     public enum Categoria {

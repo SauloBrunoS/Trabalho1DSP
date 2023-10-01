@@ -1,50 +1,36 @@
-<LinkedList>
-  <item>id</item>
-  <item>nome</item>
-  <item>descricao</item>
-  <item>categoria</item>
-  <item>quantidade</item>
-  <item>valor</item>
-  <item>0</item>
-  <item>Livro</item>
-  <item>Livro do Harry Potter</item>
-  <item>LIVROS</item>
-  <item>1</item>
-  <item>250.0</item>
-  <item>1</item>
-  <item>Mesa</item>
-  <item>Mesa de Jantar</item>
-  <item>MOVEIS</item>
-  <item>1</item>
-  <item>500.0</item>
-  <item>2</item>
-  <item>Bola</item>
-  <item>Bola de Futebol</item>
-  <item>BRINQUEDOS</item>
-  <item>1</item>
-  <item>10.0</item>
-  <item>3</item>
-  <item>Bola</item>
-  <item>Bola de Futebol</item>
-  <item>BRINQUEDOS</item>
-  <item>1</item>
-  <item>10.0</item>
-  <item>3</item>
-  <item>Camisa</item>
-  <item>Azul M</item>
-  <item>ROUPAS</item>
-  <item>10</item>
-  <item>30.0</item>
-  <item>4</item>
-  <item>Celular</item>
-  <item>Samsung a10</item>
-  <item>ELETRONICOS</item>
-  <item>1</item>
-  <item>100.0</item>
-  <item>5</item>
-  <item>O pequeno principe</item>
-  <item>bonito</item>
-  <item>LIVROS</item>
-  <item>2</item>
-  <item>10.0</item>
-</LinkedList>
+<listasCompras>
+  <listaCompras>
+    <itemLista>
+      <id>0</id>
+      <nome>Livro</nome>
+      <descricaoItem>Livro do Harry Potter</descricaoItem>
+      <categoriaItem>LIVROS</categoriaItem>
+      <quantidade>1</quantidade>
+      <valor>150.0</valor>
+    </itemLista>
+    <itemLista>
+      <id>1</id>
+      <nome>Mesa</nome>
+      <descricaoItem>Mesa de Jantar</descricaoItem>
+      <categoriaItem>MOVEIS</categoriaItem>
+      <quantidade>2</quantidade>
+      <valor>500.0</valor>
+    </itemLista>
+    <itemLista>
+      <id>2</id>
+      <nome>Bola</nome>
+      <descricaoItem>Bola de Futebol</descricaoItem>
+      <categoriaItem>BRINQUEDOS</categoriaItem>
+      <quantidade>2</quantidade>
+      <valor>10.5</valor>
+    </itemLista>
+    <itemLista>
+      <id>3</id>
+      <nome>Skate</nome>
+      <descricaoItem>Skate Vermelho</descricaoItem>
+      <categoriaItem>ESPORTES</categoriaItem>
+      <quantidade>2</quantidade>
+      <valor>75.8</valor>
+    </itemLista>
+  </listaCompras>
+</listasCompras>

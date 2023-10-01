@@ -1,1 +1,31 @@
-[ [ "id", "nome", "descricao", "categoria", "quantidade", "valor" ], [ "0", "Livro", "Livro do Harry Potter", "LIVROS", "1", "250.0" ], [ "1", "Mesa", "Mesa de Jantar", "MOVEIS", "1", "500.0" ], [ "2", "Bola", "Bola de Futebol", "BRINQUEDOS", "1", "10.0" ], [ "3", "Bola", "Bola de Futebol", "BRINQUEDOS", "1", "10.0" ], [ "3", "Camisa", "Azul M", "ROUPAS", "10", "30.0" ], [ "4", "Celular", "Samsung a10", "ELETRONICOS", "1", "100.0" ], [ "5", "O pequeno principe", "bonito", "LIVROS", "2", "10.0" ] ]
+{
+  "listaItens" : [ {
+    "id" : 0,
+    "nome" : "Livro",
+    "descricaoItem" : "Livro do Harry Potter",
+    "categoriaItem" : "LIVROS",
+    "quantidade" : 1,
+    "valor" : 150.0
+  }, {
+    "id" : 1,
+    "nome" : "Mesa",
+    "descricaoItem" : "Mesa de Jantar",
+    "categoriaItem" : "MOVEIS",
+    "quantidade" : 2,
+    "valor" : 500.0
+  }, {
+    "id" : 2,
+    "nome" : "Bola",
+    "descricaoItem" : "Bola de Futebol",
+    "categoriaItem" : "BRINQUEDOS",
+    "quantidade" : 2,
+    "valor" : 10.5
+  }, {
+    "id" : 3,
+    "nome" : "Skate",
+    "descricaoItem" : "Skate Vermelho",
+    "categoriaItem" : "ESPORTES",
+    "quantidade" : 2,
+    "valor" : 75.8
+  } ]
+}

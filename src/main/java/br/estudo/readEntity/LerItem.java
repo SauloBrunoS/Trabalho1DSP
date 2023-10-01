@@ -27,7 +27,6 @@ public class LerItem {
         System.out.println("Valor: ");
         Number valor = scan.nextDouble();
 
-
         Item item = new Item(nome, descricao, categoria_item, quantidade, valor);
         return item;
     }
@@ -36,8 +35,8 @@ public class LerItem {
         String[] dados = {
                 String.valueOf(item.getId()),
                 item.getNome(),
-                item.getDescricao_item(),
-                String.valueOf(item.getCategoria_item()),
+                item.getDescricaoItem(),
+                String.valueOf(item.getCategoriaItem()),
                 String.valueOf(item.getQuantidade()),
                 String.valueOf(item.getValor()),
         };
