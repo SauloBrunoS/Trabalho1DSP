@@ -1,7 +1,5 @@
 package br.estudo.model;
 
-import java.io.*;
-import java.util.ArrayList;
 import java.util.List;
 
 import br.estudo.functions.ConverterCSVtoJSONeXML;
