@@ -7,6 +7,8 @@ import br.estudo.model.Item;
 public class LerItem {
     public Item lerItem() {
         Scanner scan = new Scanner(System.in);
+        System.out.println("\n*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*\n");
+
         System.out.println("Novo Item de Compras");
         System.out.println("Nome: ");
         String nome = scan.nextLine();
@@ -24,6 +26,7 @@ public class LerItem {
 
         System.out.println("Valor: ");
         Number valor = scan.nextDouble();
+
 
         Item item = new Item(nome, descricao, categoria_item, quantidade, valor);
         return item;
