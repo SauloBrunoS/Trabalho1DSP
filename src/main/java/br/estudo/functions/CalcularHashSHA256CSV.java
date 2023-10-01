@@ -5,6 +5,10 @@ import java.security.MessageDigest;
 
 public class CalcularHashSHA256CSV {
     public static String calcularHashSHA256ItemCSV() throws Exception {
+        boolean existe = new File("entidade_item.csv").exists();
+        if (!existe) {
+            return "Insira pelo menos uma entidade no csv";
+        }
         String arquivoCSV = "entidade_item.csv";
         FileInputStream fis = new FileInputStream(arquivoCSV);
         MessageDigest digest = MessageDigest.getInstance("SHA-256");

@@ -1,3 +1,4 @@
 "id","nome","descricao","categoria","quantidade","valor"
-"0","Bola","Bola de Futebol","BRINQUEDOS","1","10.5"
-"1","Mesa","Mesa para sala","MOVEIS","1","250.0"
+"0","Livro","Livro do Harry Potter","LIVROS","1","250.0"
+"1","Mesa","Mesa de Jantar","MOVEIS","1","500.0"
+"2","Bola","Bola de Futebol","BRINQUEDOS","1","10.0"
