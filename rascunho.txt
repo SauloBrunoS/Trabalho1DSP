@@ -1,0 +1,32 @@
+Sistema de Gerenciamento de Listas de Compras	
+
+crud
+
+1 "Criação de Listas: Os usuários podem criar múltiplas listas de compras, //ok
+cada uma com um nome específico, como ""Compras do Supermercado"" ou ""Material de Escritório"".
+
+2 Adição de Itens: Os usuários podem adicionar itens às listas de compras, //ok
+incluindo informações como nome do item, quantidade desejada e, opcionalmente, uma descrição.
+
+3 Marcação de Itens: Os itens em uma lista podem ser marcados como adquiridos, 
+permitindo aos usuários rastrear o que já foi comprado. //n ok
+
+4 Edição : Os usuários podem editar as informações dos itens, como quantidade e descrição,.
+
+5 Remoção de Itens  e também remover itens das listas //ok
+
+rn // nenhum ok
+Compartilhamento de Listas: A capacidade de compartilhar listas de compras com outras pessoas, como membros
+ da família ou colegas de casa, para que possam colaborar na preparação das compras.
+
+Lembretes e Notificações: O sistema pode fornecer lembretes ou notificações aos usuários para lembrá-los das
+ compras pendentes em suas listas.
+
+O usuário poderá se cadastrar e fazer login.
+
+O usuário terá um perfil contendo nome e endereço de e-mail.
+
+O sistema utilizará um banco de dados relacional para armazenar as informações relacionadas aos usuários, 
+às listas de compras e aos itens. As informações a serem armazenadas incluem o nome e o email dos usuários,
+ os nomes das listas, os detalhes dos itens (nome, quantidade, descrição) e o status de compra de cada item 
+ (marcado ou não marcado). "	Lista de Compras, Item da Lista de Compras e Usuário.
