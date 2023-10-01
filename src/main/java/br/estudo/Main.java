@@ -4,6 +4,7 @@ import java.util.ArrayList;
 import java.util.List;
 import java.util.Scanner;
 
+import br.estudo.functions.CalcularHashSHA256CSV;
 import br.estudo.functions.CompactarCSVParaZIP;
 import br.estudo.functions.ContarInstanciasCSV;
 import br.estudo.functions.InserirNoCSV;
@@ -32,7 +33,7 @@ public class Main {
                         System.out.println(resultadoInserirItemCSV);
                         break;
                     case 2:
-                        String resultadoContarInstanciasItemCSV = ContarInstanciasCSV.ContarItens();
+                        String resultadoContarInstanciasItemCSV = ContarInstanciasCSV.contarItens();
                         System.out.println(resultadoContarInstanciasItemCSV);
                         break;
                     // case 3:
@@ -42,9 +43,10 @@ public class Main {
                         String resultadoCompactarItemCSVParaZIP = CompactarCSVParaZIP.compactarItemCSVParaZIP();
                         System.out.println(resultadoCompactarItemCSVParaZIP);
                         break;
-                    // case 5:
-                    // mostrarHashSHA256doCSV();
-                    // break;
+                    case 5:
+                        String resultadoCalcularHashSHA256ItemCSV = CalcularHashSHA256CSV.calcularHashSHA256ItemCSV();
+                        System.out.println(resultadoCalcularHashSHA256ItemCSV);
+                        break;
                     case 6:
                         System.out.println("Saindo...");
                         scanner.close();
